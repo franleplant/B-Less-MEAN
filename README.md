@@ -33,17 +33,17 @@ My dream is to make things easier.
 TODO:
 ====
 
--[ ] Create a directory for front end sources
--[ ] Compiled front end sources will go to `public/` directory
--[ ] Install Angular and use it.
--[ ] Install browserify and use it (source maps).
--[ ] Create Gulp task to process Less into Css.
--[ ] Create Gulp task to process JS with Browserify into a `bundle.js`
--[ ] Add Mongo DB and Mongoose and create a basic User model and use it!
--[ ] Add config directory to host all env configs
--[ ] Create a Sign in site
--[ ] Create a Sign up site
--[ ] Think about how to separate Routes from Controllers:
+- [ ] Create a directory for front end sources
+- [ ] Compiled front end sources will go to `public/` directory
+- [ ] Install Angular and use it.
+- [ ] Install browserify and use it (source maps).
+- [ ] Create Gulp task to process Less into Css.
+- [ ] Create Gulp task to process JS with Browserify into a `bundle.js`
+- [ ] Add Mongo DB and Mongoose and create a basic User model and use it!
+- [ ] Add config directory to host all env configs
+- [ ] Create a Sign in site
+- [ ] Create a Sign up site
+- [ ] Think about how to separate Routes from Controllers:
      - Option 1: Like Rails. `routes/index.js` route `/` maps to `controller/index/index.js`. `routes/user.js` route `/` maps to `controllers/user/index.js` and `routes/user.js` route `/login` maps to `controllers/user/login.js`
 
 
