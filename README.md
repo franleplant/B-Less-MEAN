@@ -46,3 +46,8 @@ TODO:
 -[ ] Think about how to separate Routes from Controllers:
      - Option 1: Like Rails. `routes/index.js` route `/` maps to `controller/index/index.js`. `routes/user.js` route `/` maps to `controllers/user/index.js` and `routes/user.js` route `/login` maps to `controllers/user/login.js`
 
+
+
+## Notes
+
+- The basic directory layout was first made with express generator.
