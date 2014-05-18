@@ -46,9 +46,9 @@ My dream is to make things easier.
 TODO:
 ====
 
-- [ ] Create a directory for front end sources
+- [x] Create a directory for front end sources
 - [ ] Compiled front end sources will go to `public/` directory
-- [ ] Install Angular and use it.
+- [x] Install Angular and use it.
 - [ ] Install browserify and use it (source maps).
 - [ ] Create Gulp task to process Less into Css.
 - [ ] Create Gulp task to process JS with Browserify into a `bundle.js`
