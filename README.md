@@ -54,7 +54,7 @@ TODO:
 - [x] Create Gulp task to process JS with Browserify into a `main.js`
 - [x] Gulp Clean tasks
 - [x] Gulp Watch Task
-- [x] Create an example Angular module to show browserify and Angular playing along
+- [ ] Create an example Angular module to show browserify and Angular playing along
 - [ ] Add Mongo DB and Mongoose and create a basic User model and use it!
 - [ ] Add config directory to host all env configs
 - [ ] Create a Sign in site
