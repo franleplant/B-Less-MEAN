@@ -1,14 +1,27 @@
-MEAN v2
+B Less MEAN
 =======
 
+Bad boys might be sexy but no one wants to work with them.
 
-This is my version of MEAN (work in progress).
-It'll work with:
 
-- Browserify
+**Be Less Mean!**
+
+
+B Less MEAN stack refers to:
+
+- **B**rowserify
+- **Less**
+- **M**ongo
+- **E**xpress
+- **A**ngularjs
+- **N**ode
+
+
+Also we are going to be using:
+
 - Karma
-- Less
 - Jade
+- Gulp
 
 
 Vision
