@@ -50,8 +50,10 @@ TODO:
 - [x] Compiled front end sources will go to `public/` directory
 - [x] Install Angular and use it.
 - [x] Install browserify and use it (source maps).
-- [ ] Create Gulp task to process Less into Css.
+- [x] Create Gulp task to process Less into Css.
 - [x] Create Gulp task to process JS with Browserify into a `main.js`
+- [x] Gulp Clean tasks
+- [x] Gulp Watch Task
 - [x] Create an example Angular module to show browserify and Angular playing along
 - [ ] Add Mongo DB and Mongoose and create a basic User model and use it!
 - [ ] Add config directory to host all env configs
