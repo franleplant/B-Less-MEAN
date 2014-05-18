@@ -1,0 +1,24 @@
+{
+  "name": "Be Less Mean",
+  "version": "0.0.0",
+  "homepage": "https://github.com/franleplant/B-Less-MEAN",
+  "authors": [
+    "franleplant <franleplant@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./client/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16"
+  }
+}
