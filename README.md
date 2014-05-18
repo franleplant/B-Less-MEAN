@@ -9,12 +9,12 @@ Bad boys might be sexy but no one wants to work with them.
 
 B Less MEAN stack refers to:
 
-- **B**rowserify
+- **B** rowserify
 - **Less**
-- **M**ongo
-- **E**xpress
-- **A**ngularjs
-- **N**ode
+- **M** ongo
+- **E** xpress
+- **A** ngularjs
+- **N** ode
 
 
 Also we are going to be using:
