@@ -47,11 +47,11 @@ TODO:
 ====
 
 - [x] Create a directory for front end sources
-- [ ] Compiled front end sources will go to `public/` directory
+- [x] Compiled front end sources will go to `public/` directory
 - [x] Install Angular and use it.
-- [ ] Install browserify and use it (source maps).
+- [x] Install browserify and use it (source maps).
 - [ ] Create Gulp task to process Less into Css.
-- [ ] Create Gulp task to process JS with Browserify into a `bundle.js`
+- [x] Create Gulp task to process JS with Browserify into a `main.js`
 - [ ] Add Mongo DB and Mongoose and create a basic User model and use it!
 - [ ] Add config directory to host all env configs
 - [ ] Create a Sign in site
@@ -62,5 +62,7 @@ TODO:
 
 
 ## Notes
+
+- What about atomify???
 
 - The basic directory layout was first made with express generator.
