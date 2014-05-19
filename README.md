@@ -73,7 +73,7 @@ TODO:
 - [ ] Encrypt password in DB
 - [ ] Create Seed files
 - [x] Add authorization support
-- [ ] Logout
+- [x] Logout
 - [ ] Refactor, tidy up
 - [ ] Add config directory to host all env configs
 - [ ] Create a Sign up site
