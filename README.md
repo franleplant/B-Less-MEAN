@@ -72,7 +72,9 @@ TODO:
 - [ ] Add password field to User model.
 - [ ] Encrypt password in DB
 - [ ] Create Seed files
-- [ ] Add authorization support
+- [x] Add authorization support
+- [ ] Logout
+- [ ] Refactor, tidy up
 - [ ] Add config directory to host all env configs
 - [ ] Create a Sign up site
 - [ ] Test express parts(tape?)
