@@ -6,4 +6,19 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/login', function(req, res) {
+  res.render('login');
+});
+
+
+
+var passport = require('passport');
+
+router.post('/login', 
+	passport.authenticate('local', { 
+							successRedirect: '/',
+                            failureRedirect: '/login'
+                     	})
+);
+
 module.exports = router;

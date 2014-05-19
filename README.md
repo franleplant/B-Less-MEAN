@@ -43,6 +43,15 @@ My dream is to enforce Client-side Javascript to be engineered in such a way tha
 My dream is to make things easier.
 
 
+### Installing MongoDB
+
+- Download [Mongo](http://www.mongodb.org/downloads)
+- [Install Mongo](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
+- Open up a CLI and run `"C:\Program Files\MongoDB 2.6 Standard\bin\mongod.exe"` (Windows). This will open the Server.
+- Test with the client!: Open a CLI and run the client `"C:\Program Files\MongoDB 2.6 Standard\bin\mongo.exe"`
+
+> Note: the CLI is the GIT BASH prefered
+
 TODO:
 ====
 
@@ -55,17 +64,24 @@ TODO:
 - [x] Gulp Clean tasks
 - [x] Gulp Watch Task
 - [ ] Create an example Angular module to show browserify and Angular playing along
-- [ ] Add Mongo DB and Mongoose and create a basic User model and use it!
+- [ ] Test angular parts(karma? Tape with testling?)
+- [ ] See how easy is to use Ui-router or other modules
+- [x] Install MongoDB.
+- [x] Add Mongo DB and Mongoose and create a basic User model and use it!
+- [x] Create a Sign in site
+- [ ] Add password field to User model.
+- [ ] Encrypt password in DB
+- [ ] Create Seed files
+- [ ] Add authorization support
 - [ ] Add config directory to host all env configs
-- [ ] Create a Sign in site
 - [ ] Create a Sign up site
+- [ ] Test express parts(tape?)
+- [ ] Add single run versions of Gulp build tasks (`--prod` ?)
 - [ ] Think about how to separate Routes from Controllers:
      - Option 1: Like Rails. `routes/index.js` route `/` maps to `controller/index/index.js`. `routes/user.js` route `/` maps to `controllers/user/index.js` and `routes/user.js` route `/login` maps to `controllers/user/login.js`
 
 
 
 ## Notes
-
-- What about atomify???
 
 - The basic directory layout was first made with express generator.
