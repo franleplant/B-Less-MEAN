@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
 var chalk = require('chalk');
+var gulpif = require('gulp-if');
 
 var dir = {
 	src: {
@@ -14,14 +15,12 @@ var dir = {
 }
 
 
-gulp.task('default', ['build:js', 'build:css'], function () {
-
-});
+var args = require('argh').argv;
 
 
 
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
-gulp.task('build:js', ['clean:js'], function() {
+gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 
 	var source = require('vinyl-source-stream');
 	var browserify = require('browserify');
@@ -39,9 +38,9 @@ gulp.task('build:js', ['clean:js'], function() {
 
 	function rebundle () {
 		console.log(  chalk.blue('Watchify: rebuilding.')  );
-		gulp.start('build:tpl');
+		//gulp.start('build:tpl');
 
-		
+
 		return bundler.bundle()
 		  .pipe(source('main.js'))
 		  .pipe(gulp.dest(dir.compiled.js));
@@ -54,7 +53,10 @@ gulp.task('build:js', ['clean:js'], function() {
 
 
 
+/**
+	Build Templates
 
+*/
 var templateCache = require('gulp-angular-templatecache');
 var through = require('through2');
 var path = require('path');
@@ -68,7 +70,7 @@ gulp.task('build:tpl', function () {
 
 			file.base = path.join(file.base, '/client/js/');
 			//console.log(file.base, file.cwd, file.path)
-
+			console.log("hi!")
 			this.push(file)
 			callback()
 		}))
@@ -76,14 +78,27 @@ gulp.task('build:tpl', function () {
         .pipe(gulp.dest(dir.src.js));
 });
 
+gulp.task('watch:tpl', function () {
+    watch({glob: './**/*tpl.html'}, function(files) {
+        gulp.start('build:tpl');
+    });
+});
+
+
+
+/**
+ Build Less into CSS
+*/
+var gutil = require('gulp-util');
+
 
 gulp.task("build:css", ['clean:css'], function () {
 
 	var less = require('gulp-less');
 
-
+	console.log(!args.prod)
     gulp.src(dir.src.less + 'main.less')
-    	.pipe(watch())
+    	.pipe(!args.prod ? watch() : gutil.noop())
         .pipe(less({
             compress:  true,
             sourceMap: true
@@ -113,3 +128,6 @@ gulp.task("clean:css", function (callback) {
 });
 
 
+
+
+gulp.task('default', ['build:js', 'build:css', 'watch:tpl'])
