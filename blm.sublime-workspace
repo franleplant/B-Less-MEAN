@@ -1,0 +1,264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"distance",
+				"distance_norm"
+			],
+			[
+				"random",
+				"random_point"
+			],
+			[
+				"ne",
+				"neuron_i"
+			],
+			[
+				"distan",
+				"distance_mod"
+			],
+			[
+				"s",
+				"subtract"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"get",
+				"get_gist"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Bairesdev/Desktop/NOTES.md",
+		"/C/Users/Bairesdev/Desktop/wiki/Home.md",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box - copia/README.md",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box - copia/Vagrantfile",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box - copia/install.sh",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box/shared/SOM/README.md",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box/shared/SOM/makefile",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box/Vagrantfile",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box/shared/SOM/main.c",
+		"/C/Users/Bairesdev/Desktop/vm_test/Vagrantfile",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box/install.sh",
+		"/C/Users/Bairesdev/Desktop/SOM.c-box/README.md",
+		"/C/Users/Bairesdev/Desktop/SOM/src/sphere_dist.py",
+		"/C/Users/Bairesdev/Desktop/som.c/main.c",
+		"/C/Users/Bairesdev/Desktop/som.c/README.md",
+		"/C/Users/Bairesdev/Desktop/SOM/som.sublime-project",
+		"/C/Users/Bairesdev/Desktop/blmean/README.md",
+		"/C/Users/Bairesdev/Desktop/blmean/client/less/main.less",
+		"/C/Users/Bairesdev/Desktop/blmean/app.js",
+		"/C/Users/Bairesdev/Desktop/blmean/model/user.js",
+		"/C/Users/Bairesdev/Desktop/blmean/client/js/main.js",
+		"/C/Users/Bairesdev/Desktop/blmean/routes/index.js",
+		"/C/Users/Bairesdev/Desktop/blmean/views/login.jade",
+		"/C/Users/Bairesdev/Desktop/blmean/views/index.jade",
+		"/C/Users/Bairesdev/Desktop/blmean/Gulpfile.js",
+		"/C/Users/Bairesdev/Desktop/blmean/package.json",
+		"/C/Users/Bairesdev/Desktop/blmean/views/layout.jade",
+		"/C/Users/Bairesdev/Desktop/blmean/public/css/main.css",
+		"/C/Users/Bairesdev/Desktop/blmean/views/error.jade",
+		"/C/Users/Bairesdev/Desktop/blmean/.bowerrc",
+		"/C/Users/Bairesdev/Desktop/blmean/public/js/main.js",
+		"/C/Users/Bairesdev/Desktop/CEP.md",
+		"/C/Users/Bairesdev/Desktop/SOM/README.md",
+		"/C/Users/Bairesdev/Downloads/surface3d_demo2.py",
+		"/C/Users/Bairesdev/Downloads/wire3d_demo.py",
+		"/C/Users/Bairesdev/Downloads/scatter3d_demo.py",
+		"/C/Users/Bairesdev/Desktop/noter/index.html",
+		"/C/Users/Bairesdev/Desktop/noter/src/home.tpl.html",
+		"/C/Users/Bairesdev/Desktop/noter/src/main.css",
+		"/C/Users/Bairesdev/Desktop/noter/src/main.js",
+		"/C/Users/Bairesdev/Desktop/noter/src/navigator.tpl.html",
+		"/C/Users/Bairesdev/Desktop/SOM-box/README.md",
+		"/C/Users/Bairesdev/Desktop/noter/src/header.tpl.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/=",
+			"x",
+			"Sphere",
+			"= random();",
+			"r2",
+			"Sphere",
+			"F",
+			"Sphere",
+			"self",
+			"Sphere[i]",
+			"point_i",
+			";",
+			"p.",
+			"p",
+			"Fer",
+			"Fer.vector",
+			"Sphere[j].vector",
+			"Sphere[i].vector",
+			"dist_mod",
+			"d",
+			"D",
+			"270",
+			"MAX_ITERATION",
+			"z",
+			"0",
+			"x",
+			"0",
+			"x",
+			"foo",
+			"angular",
+			"X",
+			"p.",
+			"2 * (Random.random() - 0.5)",
+			"random",
+			"data"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "blm.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
