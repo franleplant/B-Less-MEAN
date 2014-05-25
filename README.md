@@ -43,12 +43,12 @@ My dream is to enforce Client-side Javascript to be engineered in such a way tha
 My dream is to make things easier.
 
 
-### Installing MongoDB
+### Installing and using MongoDB
 
 - Download [Mongo](http://www.mongodb.org/downloads)
 - [Install Mongo](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
-- Open up a CLI and run `"C:\Program Files\MongoDB 2.6 Standard\bin\mongod.exe"` (Windows). This will open the Server.
-- Test with the client!: Open a CLI and run the client `"C:\Program Files\MongoDB 2.6 Standard\bin\mongo.exe"`
+- Start the Server `"C:\Program Files\MongoDB 2.6 Standard\bin\mongod.exe"` (Windows).
+- Start the client (test only) `"C:\Program Files\MongoDB 2.6 Standard\bin\mongo.exe"`
 
 > Note: the CLI is the GIT BASH prefered
 
@@ -78,6 +78,7 @@ TODO:
 - [x] Add authorization support
 - [x] Logout
 - [ ] Refactor, tidy up
+- [ ] Refactor the directory layout
 - [ ] Add config directory to host all env configs
 - [ ] Create a Sign up site
 - [ ] Test express parts(tape?)
