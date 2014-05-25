@@ -63,8 +63,10 @@ TODO:
 - [x] Create Gulp task to process JS with Browserify into a `main.js`
 - [x] Gulp Clean tasks
 - [x] Gulp Watch Task
-- [ ] Create an example Angular module to show browserify and Angular playing along
-- [ ] Create the templates workflow
+- [x] Create an example Angular module to show browserify and Angular playing along
+- [x] Create the templates workflow
+- [ ] Create a watch task for templates
+- [ ] Use ng-min
 - [ ] Test angular parts(karma? Tape with testling?)
 - [ ] See how easy is to use Ui-router or other modules
 - [x] Install MongoDB.

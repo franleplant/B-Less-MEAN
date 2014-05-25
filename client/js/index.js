@@ -1,7 +1,11 @@
 var angular = require('angular');
 
 
-angular.module('main', [require('./module_a')])
+require('./templates');
+
+
+
+angular.module('main', [require('./module_a'), "templates"])
 	.controller('AppCtrl', function ($scope) {
 		$scope.title="Im Angular! Im your friend.";
 	});

@@ -1,0 +1,1 @@
+angular.module("templates", []).run(["$templateCache", function($templateCache) {$templateCache.put("module_a/A.tpl.html","<div ng-controller=\"FunCtrl\">\r\n	{{fun}}\r\n\r\n</div>");}]);

@@ -39,6 +39,9 @@ gulp.task('build:js', ['clean:js'], function() {
 
 	function rebundle () {
 		console.log(  chalk.blue('Watchify: rebuilding.')  );
+		gulp.start('build:tpl');
+
+		
 		return bundler.bundle()
 		  .pipe(source('main.js'))
 		  .pipe(gulp.dest(dir.compiled.js));
@@ -49,6 +52,29 @@ gulp.task('build:js', ['clean:js'], function() {
 	return rebundle()
 });
 
+
+
+
+var templateCache = require('gulp-angular-templatecache');
+var through = require('through2');
+var path = require('path');
+
+gulp.task('build:tpl', function () {
+
+	console.log(  chalk.blue('Caching templates')  );
+    gulp.src('./**/*tpl.html')
+   		//This is to facilitate referencing the templates
+		.pipe(through.obj(function (file, enc, callback) {
+
+			file.base = path.join(file.base, '/client/js/');
+			//console.log(file.base, file.cwd, file.path)
+
+			this.push(file)
+			callback()
+		}))
+        .pipe(templateCache({standalone: true}))
+        .pipe(gulp.dest(dir.src.js));
+});
 
 
 gulp.task("build:css", ['clean:css'], function () {
