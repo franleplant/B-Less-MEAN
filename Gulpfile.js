@@ -31,7 +31,7 @@ gulp.task('build:js', ['clean:js'], function() {
 		};
 
 	var bundler = watchify({
-		entries: dir.src.js + 'main.js',
+		entries: dir.src.js,
 		debug: true
 	});
 

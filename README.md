@@ -64,6 +64,7 @@ TODO:
 - [x] Gulp Clean tasks
 - [x] Gulp Watch Task
 - [ ] Create an example Angular module to show browserify and Angular playing along
+- [ ] Create the templates workflow
 - [ ] Test angular parts(karma? Tape with testling?)
 - [ ] See how easy is to use Ui-router or other modules
 - [x] Install MongoDB.
