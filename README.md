@@ -69,6 +69,7 @@ TODO:
 - [x] Refactor the client layout into modules (including css)
 - [ ] Fix calling twice `build:tpl`
 - [x] Use browwserify ng-min or browserify ng annotates transforms 
+- [x] Miniffication
 - [ ] Test angular parts(karma? Tape with testling?)
 - [ ] See how easy is to use Ui-router or other modules
 - [x] Change Express templating engine

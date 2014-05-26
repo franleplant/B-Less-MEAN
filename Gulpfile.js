@@ -67,7 +67,7 @@ gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 		return bundler.bundle()
 		  .pipe(source('main.js'))
 		  .pipe(bufferify())
-		  //.pipe(gulpif(  args.prod,  uglify() ))
+		  .pipe(gulpif(  args.prod,  uglify() ))
 		  .pipe(gulp.dest(dir.compiled.js));
 	}
 
