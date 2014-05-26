@@ -66,9 +66,11 @@ TODO:
 - [x] Create an example Angular module to show browserify and Angular playing along
 - [x] Create the templates workflow
 - [ ] Create a watch task for templates
+- [ ] Refactor the client layout into modules (including css)
 - [ ] Use ng-min
 - [ ] Test angular parts(karma? Tape with testling?)
 - [ ] See how easy is to use Ui-router or other modules
+- [ ] Change Express templating engine
 - [x] Install MongoDB.
 - [x] Add Mongo DB and Mongoose and create a basic User model and use it!
 - [x] Create a Sign in site
