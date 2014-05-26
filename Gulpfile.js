@@ -26,13 +26,21 @@ var args = require('argh').argv;
   Build Javascript
 */
 
+var gulpif = require('gulp-if');
+var bufferify = require('gulp-buffer');
+
+
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
 gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 
 	var source = require('vinyl-source-stream');
 
+	var uglify = require('gulp-uglify');
+
 	var browserify_opts = {
-		    debug: true
+			//transform: ["browserify-ngannotate"],
+			debug: !!args.prod,
+			entries: dir.src + 'index.js'
 		};
 
 	/**
@@ -43,10 +51,7 @@ gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 	*/
 	var b = args.prod ? require('browserify') : require('watchify');
 
-	var bundler = b({
-		entries: dir.src + 'index.js',
-		debug: true
-	});
+	var bundler = b(browserify_opts).transform('browserify-ngannotate');
 
   	
 	/**
@@ -61,6 +66,8 @@ gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 
 		return bundler.bundle()
 		  .pipe(source('main.js'))
+		  .pipe(bufferify())
+		  //.pipe(gulpif(  args.prod,  uglify() ))
 		  .pipe(gulp.dest(dir.compiled.js));
 	}
 

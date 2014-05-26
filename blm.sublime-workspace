@@ -39,21 +39,82 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/src/module_a/A.tpl.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/main.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client/src/index.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"Pac",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 0.0
+		"width": 400.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 153.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -67,6 +128,32 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Bairesdev/Desktop/blmean/test.js",
+		"/C/Users/Bairesdev/Desktop/blmean/public/js/main.js",
+		"/C/Users/Bairesdev/Desktop/blmean/views/login.ejs",
+		"/C/Users/Bairesdev/Desktop/blmean/views/index.ejs",
+		"/C/Users/Bairesdev/Desktop/blmean/routes/users.js",
+		"/C/Users/Bairesdev/Desktop/blmean/routes/index.js",
+		"/C/Users/Bairesdev/Desktop/test/package.json",
+		"/C/Users/Bairesdev/Desktop/test/app.js",
+		"/C/Users/Bairesdev/Desktop/test/routes/index.js",
+		"/C/Users/Bairesdev/Desktop/blmean/client/src/module_a/style.less",
+		"/C/Users/Bairesdev/Desktop/blmean/client/src/main.less",
+		"/C/Users/Bairesdev/Desktop/blmean/views/layout.jade",
+		"/C/Users/Bairesdev/Desktop/blmean/views/layout.ejs",
+		"/C/Users/Bairesdev/Desktop/blmean/views/footer.ejs",
+		"/C/Users/Bairesdev/Desktop/test/views/index.ejs",
+		"/C/Users/Bairesdev/Desktop/blmean/app.js",
+		"/C/Users/Bairesdev/Desktop/blmean/views/index.jade",
+		"/C/Users/Bairesdev/Desktop/blmean/client/src/module_a/A.tpl.html",
+		"/C/Users/Bairesdev/Desktop/blmean/client/src/templates.js",
+		"/C/Users/Bairesdev/Desktop/blmean/client/js/templates.js",
+		"/C/Users/Bairesdev/Desktop/blmean/client/js/module_a/A.tpl.html",
+		"/C/Users/Bairesdev/Desktop/blmean/client/less/main.less",
+		"/C/Users/Bairesdev/Desktop/blmean/client/js/index.js",
+		"/C/Users/Bairesdev/Desktop/blmean/public/css/main.css",
+		"/C/Users/Bairesdev/Desktop/blmean/client/js/main.js",
+		"/C/Users/Bairesdev/Desktop/blmean/client/js/module.js",
 		"/C/Users/Bairesdev/Desktop/NOTES.md",
 		"/C/Users/Bairesdev/Desktop/wiki/Home.md",
 		"/C/Users/Bairesdev/Desktop/SOM.c-box - copia/README.md",
@@ -84,20 +171,12 @@
 		"/C/Users/Bairesdev/Desktop/som.c/README.md",
 		"/C/Users/Bairesdev/Desktop/SOM/som.sublime-project",
 		"/C/Users/Bairesdev/Desktop/blmean/README.md",
-		"/C/Users/Bairesdev/Desktop/blmean/client/less/main.less",
-		"/C/Users/Bairesdev/Desktop/blmean/app.js",
 		"/C/Users/Bairesdev/Desktop/blmean/model/user.js",
-		"/C/Users/Bairesdev/Desktop/blmean/client/js/main.js",
-		"/C/Users/Bairesdev/Desktop/blmean/routes/index.js",
 		"/C/Users/Bairesdev/Desktop/blmean/views/login.jade",
-		"/C/Users/Bairesdev/Desktop/blmean/views/index.jade",
 		"/C/Users/Bairesdev/Desktop/blmean/Gulpfile.js",
 		"/C/Users/Bairesdev/Desktop/blmean/package.json",
-		"/C/Users/Bairesdev/Desktop/blmean/views/layout.jade",
-		"/C/Users/Bairesdev/Desktop/blmean/public/css/main.css",
 		"/C/Users/Bairesdev/Desktop/blmean/views/error.jade",
 		"/C/Users/Bairesdev/Desktop/blmean/.bowerrc",
-		"/C/Users/Bairesdev/Desktop/blmean/public/js/main.js",
 		"/C/Users/Bairesdev/Desktop/CEP.md",
 		"/C/Users/Bairesdev/Desktop/SOM/README.md",
 		"/C/Users/Bairesdev/Downloads/surface3d_demo2.py",
@@ -113,7 +192,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -127,6 +206,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"browserify_opts",
+			"bufferify",
+			"BUILD:TPL",
+			"ejs",
+			"c",
+			"chunk",
 			"/=",
 			"x",
 			"Sphere",
@@ -179,8 +264,209 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/src/module_a/A.tpl.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "client/src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
 			]
 		}
 	],

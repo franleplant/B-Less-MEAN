@@ -68,7 +68,7 @@ TODO:
 - [x] Create a watch task for templates
 - [x] Refactor the client layout into modules (including css)
 - [ ] Fix calling twice `build:tpl`
-- [ ] Use ng-min
+- [x] Use browwserify ng-min or browserify ng annotates transforms 
 - [ ] Test angular parts(karma? Tape with testling?)
 - [ ] See how easy is to use Ui-router or other modules
 - [x] Change Express templating engine
