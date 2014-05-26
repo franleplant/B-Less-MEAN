@@ -4,10 +4,7 @@ var chalk = require('chalk');
 var gulpif = require('gulp-if');
 
 var dir = {
-	src: {
-		js: './client/js/',
-		less: './client/less/'
-	},
+	src: './client/src/',
 	compiled: {
 		js: './public/js/',
 		css: './public/css/'
@@ -24,7 +21,7 @@ var args = require('argh').argv;
 */
 
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
-gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
+gulp.task('build:js', ['clean:js'], function() {
 
 	var source = require('vinyl-source-stream');
 
@@ -41,7 +38,7 @@ gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 	var b = args.prod ? require('browserify') : require('watchify');
 
 	var bundler = b({
-		entries: dir.src.js,
+		entries: dir.src + 'index.js',
 		debug: true
 	});
 
@@ -94,12 +91,12 @@ gulp.task('build:tpl', function () {
    		//This is to facilitate referencing the templates
 		.pipe(through.obj(function (file, enc, callback) {
 
-			file.base = path.join(file.base, '/client/js/');
+			file.base = path.join(file.base, '/client/src/');
 			this.push(file)
 			callback()
 		}))
         .pipe(templateCache({standalone: true}))
-        .pipe(gulp.dest(dir.src.js));
+        .pipe(gulp.dest(dir.src));
 });
 
 /** watch does not work piped directly*/
@@ -121,7 +118,7 @@ gulp.task("build:css", ['clean:css'], function () {
 
 	var less = require('gulp-less');
 
-    gulp.src(dir.src.less + 'main.less')
+    gulp.src(dir.src + 'main.less')
     	.pipe(!args.prod ? watch() : gutil.noop())
         .pipe(less({
             compress:  args.prod,
@@ -154,4 +151,4 @@ gulp.task("clean:css", function (callback) {
 
 
 
-gulp.task('default', ['build:js', 'build:css', args.prod ? 'build:tpl' : 'watch:tpl'])
+gulp.task('default', [args.prod ? 'build:tpl' : 'watch:tpl', 'build:js', 'build:css'])

@@ -66,7 +66,7 @@ TODO:
 - [x] Create an example Angular module to show browserify and Angular playing along
 - [x] Create the templates workflow
 - [x] Create a watch task for templates
-- [ ] Refactor the client layout into modules (including css)
+- [x] Refactor the client layout into modules (including css)
 - [ ] Use ng-min
 - [ ] Test angular parts(karma? Tape with testling?)
 - [ ] See how easy is to use Ui-router or other modules
