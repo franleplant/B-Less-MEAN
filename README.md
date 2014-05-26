@@ -65,7 +65,7 @@ TODO:
 - [x] Gulp Watch Task
 - [x] Create an example Angular module to show browserify and Angular playing along
 - [x] Create the templates workflow
-- [ ] Create a watch task for templates
+- [x] Create a watch task for templates
 - [ ] Refactor the client layout into modules (including css)
 - [ ] Use ng-min
 - [ ] Test angular parts(karma? Tape with testling?)
@@ -84,7 +84,7 @@ TODO:
 - [ ] Add config directory to host all env configs
 - [ ] Create a Sign up site
 - [ ] Test express parts(tape?)
-- [ ] Add single run versions of Gulp build tasks (`--prod` ?)
+- [x] Add single run versions of Gulp build tasks (`--prod` ?)
 - [ ] Think about how to separate Routes from Controllers:
      - Option 1: Like Rails. `routes/index.js` route `/` maps to `controller/index/index.js`. `routes/user.js` route `/` maps to `controllers/user/index.js` and `routes/user.js` route `/login` maps to `controllers/user/login.js`
 
