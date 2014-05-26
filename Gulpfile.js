@@ -1,7 +1,13 @@
 var gulp = require('gulp');
 var watch = require('gulp-watch');
 var chalk = require('chalk');
-var gulpif = require('gulp-if');
+var through = require('through2');
+var path = require('path');
+var gutil = require('gulp-util');
+
+
+
+
 
 var dir = {
 	src: './client/src/',
@@ -21,7 +27,7 @@ var args = require('argh').argv;
 */
 
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
-gulp.task('build:js', ['clean:js'], function() {
+gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 
 	var source = require('vinyl-source-stream');
 
@@ -80,11 +86,12 @@ gulp.task('build:js', ['clean:js'], function() {
 	Build Templates
 
 */
-var templateCache = require('gulp-angular-templatecache');
-var through = require('through2');
-var path = require('path');
+
+
 
 gulp.task('build:tpl', function () {
+
+	var templateCache = require('gulp-angular-templatecache');
 
 	console.log(  chalk.blue('Caching templates')  );
     gulp.src('./**/*tpl.html')
@@ -111,7 +118,7 @@ gulp.task('watch:tpl', function () {
 /**
  Build Less into CSS
 */
-var gutil = require('gulp-util');
+
 
 
 gulp.task("build:css", ['clean:css'], function () {

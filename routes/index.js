@@ -22,7 +22,7 @@ router.get('/login', function(req, res) {
 	if (req.user) {
     	res.redirect('/');
   	}
-  res.render('login');
+  res.render('login', { title: 'Be Less Mean' });
 });
 
 

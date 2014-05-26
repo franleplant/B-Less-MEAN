@@ -67,10 +67,11 @@ TODO:
 - [x] Create the templates workflow
 - [x] Create a watch task for templates
 - [x] Refactor the client layout into modules (including css)
+- [ ] Fix calling twice `build:tpl`
 - [ ] Use ng-min
 - [ ] Test angular parts(karma? Tape with testling?)
 - [ ] See how easy is to use Ui-router or other modules
-- [ ] Change Express templating engine
+- [x] Change Express templating engine
 - [x] Install MongoDB.
 - [x] Add Mongo DB and Mongoose and create a basic User model and use it!
 - [x] Create a Sign in site

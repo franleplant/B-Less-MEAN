@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="main">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/css/main.css'>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <p><a href="/logout">Log out!</a></p>
+
+    <div ng-controller="AppCtrl">{{title}}</div>
+    <ng-include src=" 'module_a/A.tpl.html'  " ></ng-include>
+
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
