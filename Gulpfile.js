@@ -18,27 +18,42 @@ var dir = {
 var args = require('argh').argv;
 
 
+/**
+
+  Build Javascript
+*/
 
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
 gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 
 	var source = require('vinyl-source-stream');
-	var browserify = require('browserify');
-	var watchify = require('watchify');
+
 	var browserify_opts = {
 		    debug: true
 		};
 
-	var bundler = watchify({
+	/**
+		In productions environment use browserify to build just once
+		but in any other situations use watchify to watch the files
+		and re build accordingly
+
+	*/
+	var b = args.prod ? require('browserify') : require('watchify');
+
+	var bundler = b({
 		entries: dir.src.js,
 		debug: true
 	});
 
   	
+	/**
+		Create bundle, do magic with source
+		and put in in the compiled directory
 
-	function rebundle () {
-		console.log(  chalk.blue('Watchify: rebuilding.')  );
-		//gulp.start('build:tpl');
+	*/
+	function make_bundle () {
+		console.log(  chalk.blue('Building Javascript')  );
+
 
 
 		return bundler.bundle()
@@ -46,9 +61,20 @@ gulp.task('build:js', ['clean:js', 'build:tpl'], function() {
 		  .pipe(gulp.dest(dir.compiled.js));
 	}
 
-	bundler.on('update', rebundle);
+	
 
-	return rebundle()
+	/** 
+		Listen to file changes and re bundle
+		in any non production environments
+
+	*/
+	if (!args.prod) {
+		//Listen
+		bundler.on('update', make_bundle);
+	}
+	
+
+	return make_bundle();
 });
 
 
@@ -69,8 +95,6 @@ gulp.task('build:tpl', function () {
 		.pipe(through.obj(function (file, enc, callback) {
 
 			file.base = path.join(file.base, '/client/js/');
-			//console.log(file.base, file.cwd, file.path)
-			console.log("hi!")
 			this.push(file)
 			callback()
 		}))
@@ -78,6 +102,7 @@ gulp.task('build:tpl', function () {
         .pipe(gulp.dest(dir.src.js));
 });
 
+/** watch does not work piped directly*/
 gulp.task('watch:tpl', function () {
     watch({glob: './**/*tpl.html'}, function(files) {
         gulp.start('build:tpl');
@@ -96,12 +121,11 @@ gulp.task("build:css", ['clean:css'], function () {
 
 	var less = require('gulp-less');
 
-	console.log(!args.prod)
     gulp.src(dir.src.less + 'main.less')
     	.pipe(!args.prod ? watch() : gutil.noop())
         .pipe(less({
-            compress:  true,
-            sourceMap: true
+            compress:  args.prod,
+            sourceMap: !args.prod
         }))
         .pipe(gulp.dest(dir.compiled.css));
 });
@@ -130,4 +154,4 @@ gulp.task("clean:css", function (callback) {
 
 
 
-gulp.task('default', ['build:js', 'build:css', 'watch:tpl'])
+gulp.task('default', ['build:js', 'build:css', args.prod ? 'build:tpl' : 'watch:tpl'])
